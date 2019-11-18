@@ -68,7 +68,7 @@ export default class SageCell extends React.Component {
 
     componentWillUnmount() {
         const script = document.getElementById("SageCellScript");
-        document.body.removeChild(script);
+        document.head.removeChild(script);
     }
 
     render() {
